@@ -15,19 +15,16 @@ fractals/1/good and repeat the process to your hearts contents.
 1. Render the fractals is expensive. So the GA part only renders small ones. If
 You want good renders of the "good" fractals, the run make_fullsize_good.py, and that will rerender them.
 2. The main.py has a lot of parameters in the options to control what the GA does. In summary they do
-
-imgsize = image dimension size in pixels
-max_iter = how many iterations to run newtons method for
-inital_population = how many random ones to make in generation 0
-out_dir = directory output for where you want you renders to go
-options = {
-    "num_out": max output for each generation,
-    "num_new": number of randoms to generate and stick into each generation,
-    "mutation_rate": error rate of coef in the parents
-    "crossover_function": what crossover strategy to use,
-    "num_crossovers": how many crossover children should we make,
-    "num_parents": how many parents should be in each crossover,
-}
+  * imgsize = image dimension size in pixels
+  * max_iter = how many iterations to run newtons method for
+  * inital_population = how many random ones to make in generation 0
+  * out_dir = directory output for where you want you renders to go
+  * "num_out": max output for each generation,
+  * "num_new": number of randoms to generate and stick into each generation,
+  * "mutation_rate": error rate of coef in the parents
+  * "crossover_function": what crossover strategy to use,
+  * "num_crossovers": how many crossover children should we make,
+  * "num_parents": how many parents should be in each crossover,
 
 # Things to be fun to mess around with
 1. Different crossover strategies (can be found in genetic.py)
